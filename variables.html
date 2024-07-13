@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add to Cart</title>
+</head>
+<body>
+<p>
+    <button onclick="
+   calculation+='1';
+   console.log(calculation);
+">1
+    </button>
+    <button onclick="calculation+=`2`;
+    console.log(calculation);
+"
+
+    >2
+    </button>
+    <button onclick="calculation+=`2`;
+    console.log(calculation);
+"
+
+    >2
+    </button>
+    <button onclick="calculation+='+';
+    console.log(calculation);
+">+
+    </button>
+    <button onclick="calculation='';
+    console.log(calculation);
+">Reset
+    </button>
+    <button onclick="
+        calculation=eval(calculation);
+         console.log(calculation);
+">
+        =
+    </button>
+</p>
+
+<button onclick="console.log(`Cart Quantity : ${cartQuantity}`)">
+    Show Cart
+</button>
+<button onclick="
+               cartQuantity +=1;
+               console.log(`Cart Quantity : ${cartQuantity}`);
+            ">
+    Add to Cart
+</button>
+<button onclick="
+              cartQuantity+=2;
+              console.log(`Cart Quantity : ${cartQuantity}`);
+            ">
+    +2
+</button>
+<button onclick="
+            cartQuantity+=3;
+            console.log(`Cart Quantity : ${cartQuantity}`);
+            ">
+    +3
+</button>
+<button onclick="
+             cartQuantity=0;
+             console.log('Reset Cart !');">
+    Reset Cart
+</button>
+<script src="./variables.js"></script>
+</body>
+</html>
