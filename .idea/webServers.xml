@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4dfa8036-aee3-412d-afbd-7df8e856c26d" name="teencode">
+        <fileTransfer rootFolder="/home/nghenghiep/domains/teencodes.vn" accessType="SFTP" host="103.176.178.176" port="22" sshConfigId="4344049a-bfd9-41dc-a6f8-c3ede467def2" sshConfig="root@103.176.178.176:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

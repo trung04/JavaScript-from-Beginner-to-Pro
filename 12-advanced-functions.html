@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>advanced functions</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+</style>
+<body>
+<div class="container">
+    <div>
+        <button onclick="addToCart()" class="add-to-cart">Add to Cart</button>
+        <p class="status-of-cart"></p>
+    </div>
+    <div>
+        <button onclick="start()" class="button-start">Start</button>
+    </div>
+</div>
+<button onclick="addMessages()">Add Messages</button>
+<button onclick="minusMessages()">Minus Messages</button>
+
+
+<script src="./12-advanced-functions.js"></script>
+</body>
+<script>
+
+     let r = 0;
+     setInterval(function () {
+         changeTitle();
+     }, 1000);
+     setIntervalId = setInterval(function () {
+         if (r === 1) {
+             clearInterval(setIntervalId);
+         }
+         console.log(r);
+         add();
+         r++;
+     }, 1000);
+
+    console.log(multiply(7, 10));
+    console.log(countPositive([-2,3,-5,7,10]));
+    console.log(addNumber([1,2,3]));
+</script>
+
+</html>
